@@ -1,0 +1,128 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+#counter {
+  font-size: 1.5em;
+  color: #4A4A4A;
+  margin-left: 20px;
+  margin-top: 10px;
+  position: absolute;
+}
+
+#highScore {
+  margin-left: 20px;
+  margin-right: auto;
+  font-size: 1.5em;
+}
+
+#instructions {
+  color: #4A4A4A;
+  display: flex;
+  align-self: center;
+  font-size: 2em;
+  text-align: center;
+}
+
+#start {
+  position: absolute;
+  margin-left: 580px;
+  margin-top: 10px;
+  background-color: #88DD55;
+}
+
+.back {
+  transform: rotateY( 180deg );
+  background-color: green;
+}
+
+.board {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.card {
+  position: relative;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+}
+
+.container {
+  perspective: 1000px;
+  margin: 2px;
+}
+
+.container, .front, .back {
+  width: 100px;
+  height: 100px;
+}
+
+.done {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 2em;
+  font-family: 'Proxima Nova';
+  color: #4A4A4A;
+}
+
+.emptyCard {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+  background-color: #43BFC7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  font-family: 'Proxima Nova';
+  color: #4A4A4A;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mainContainer {
+  width: 700px;
+  height: 650px;
+  background-color: #F0F1F1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.nav-wrapper {
+  width: 700px;
+  height: 50px;
+  background-color: #43BFC7;
+  display: flex;
+  align-items: center;
+}
+
+.nav-wrapper li {
+  margin-right: 20px;
+}
